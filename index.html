@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script type="text/javascript" src="js/datetime.js"></script>
 
+
 </head>
 <body>
     <div class="container">
@@ -19,14 +20,10 @@
             <p>"Beauty of style and harmony and grace and good rhythm depend on simplicity."<br>~Plato</p>
         </header>
         <main>
-            <ul id="menulist">
-                <li class="menuitem"><a href="#about"><i class="fas fa-house-user"></i> About me</a></li>
-                <li class="menuitem"><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
-                <li class="menuitem"><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-                <li class="menuitem"><a href=""><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li class="menuitem"><a href=""><i class="fab fa-github"></i> Github</a></li>
-                <li class="menuitem"><a href=""><i class="fab fa-bitbucket"></i> Bitbucket</a></li>
-                <li class="menuitem"><a href=""><i class="fab fa-docker"></i> Dockerhub</a></li>
+            <ul id="menuList">
+                <li class="menuItem"><a href="#about"><i class="fas fa-house-user"></i> About me</a></li>
+                <li class="menuItem"><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li class="menuItem"><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
             <div class="content">
                 <section id="about">
@@ -39,6 +36,34 @@
                     <h2>Contact</h2>
                 </section>
             </div>
+            <script type="text/javascript">
+                function hideSections() {
+                    var sections = document.getElementsByTagName("section");
+                    for (i = 0; i < sections.length; ++i) {
+                        sections[i].style.display = "none";
+                    }
+                };
+
+                (function() {
+                    hideSections();
+                    var menuItems = document.getElementsByClassName("menuItem");
+                    for (i = 0; i < menuItems.length; ++i) {
+                        var mi = menuItems[i];
+                        mi.addEventListener('click', function(event) {
+                            event.preventDefault();
+                            hideSections();
+                            var href = event.target.href;
+                            if (href) {
+                                var sectionName = href.split("#")[1];
+                                var section = document.getElementById(sectionName);
+                                if (section) {
+                                    section.style.display = "block";
+                                }
+                            }
+                        });
+                    }
+                })();
+            </script>
             <footer>
                 <!-- Hosted on MIKR.US -->
                 Hosted on <a href="https://mikr.us/?r=fd28cce7">MIKR.US</a>

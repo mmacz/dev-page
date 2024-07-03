@@ -25,7 +25,7 @@ main {
     position: relative;
 }
 
-#menulist {
+#menuList {
     position: relative;
     padding: 0px;
     overflow: auto;
@@ -34,18 +34,18 @@ main {
     display: flex;
 }
 
-.menuitem {
+.menuItem {
     width: 150px;
     float: left;
     text-align: center;
 }
 
-.menuitem a {
+.menuItem a {
     color: #84c754;
     text-decoration: none;
 }
 
-.menuitem a:hover {
+.menuItem a:hover {
     color: white;
     font-weight: bold;
 }
