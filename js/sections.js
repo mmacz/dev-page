@@ -12,9 +12,9 @@ function hideSections() {
         var mi = menuItems[i];
         mi.addEventListener('click', function(event) {
             event.preventDefault();
-            hideSections();
             var href = event.target.href;
             if (href) {
+                hideSections();
                 var sectionName = href.split("#")[1];
                 var section = document.getElementById(sectionName);
                 if (section) {

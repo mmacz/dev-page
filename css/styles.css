@@ -35,7 +35,7 @@ main {
 }
 
 .menuItem {
-    width: 150px;
+    margin: 10px;
     float: left;
     text-align: center;
 }
@@ -46,6 +46,32 @@ main {
 }
 
 .menuItem a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+section h2 {
+    justify-content: center;
+    text-align: center;
+}
+
+section p {
+    justify-content: center;
+    text-align: center;
+}
+
+.socialItem {
+    margin: 10px;
+    float: left;
+    text-align: center;
+}
+
+.socialItem a {
+    color: #84c754;
+    text-decoration: none;
+}
+
+.socialItem a:hover {
     color: white;
     font-weight: bold;
 }
