@@ -41,7 +41,7 @@ function getQuote() {
     quotes.push({"quote": "Beauty of style and harmony and grace and good rhythm depend on simplicity.", "author": "Plato"});
     var idx = getRandomIdx(quotes.length);
     document.getElementById("quote").innerHTML  = quotes[idx]["quote"];
-    document.getElementById("author").innerHTML = quotes[idx]["author"];
+    document.getElementById("author").innerHTML = "~" + quotes[idx]["author"];
 }
 
 
