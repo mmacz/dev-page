@@ -9,12 +9,15 @@
     <link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script type="text/javascript" src="js/datetime.js"></script>
+    <script type="text/javascript" src="js/quotes.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Welcome to my homepage</h1><br>
-            <p>"Beauty of style and harmony and grace and good rhythm depend on simplicity."<br>~Plato</p>
+            <p id="quote"></p>
+            <p id="author"></p>
+            <script>getQuote();</script>
         </header>
         <main>
             <ul id="menuList">
