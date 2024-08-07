@@ -10,7 +10,6 @@
     <link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="app/static/css/styles.css">
     <script type="text/javascript" src="app/js/datetime.js"></script>
-    <script type="text/javascript" src="app/js/quotes.js"></script>
 </head>
 <body>
     <div class="container">
