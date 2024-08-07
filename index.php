@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html>
+<?php require_once("config.php"); ?>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>macznik.eu</title>
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="app/static/images/favicon.ico" type="image/x-icon">
     <link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script type="text/javascript" src="js/datetime.js"></script>
-    <script type="text/javascript" src="js/quotes.js"></script>
+    <link rel="stylesheet" type="text/css" href="app/static/css/styles.css">
+    <script type="text/javascript" src="app/js/datetime.js"></script>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Welcome to my homepage</h1><br>
-            <p id="quote"></p>
-            <p id="author"></p>
-            <script>getQuote();</script>
-        </header>
+        <?php require_once(ROOT_PATH . "/app/includes/header.php"); ?>
         <main>
             <ul id="menuList">
                 <li class="menuItem"><a href="#about"><i class="fas fa-house-user"></i> About me</a></li>
@@ -44,13 +39,14 @@
                     <p>This section is under development</p>
                 </section>
             </div>
-            <script type="text/javascript" src="js/sections.js"></script>
-            <footer>
-                <!-- Hosted on MIKR.US -->
-                Hosted on <a href="https://mikr.us/?r=fd28cce7">MIKR.US</a>
-                <p id="datetime"></p>
-            </footer>
+            <script type="text/javascript" src="app/js/sections.js"></script>
         </main>
+        <footer>
+            <!-- Hosted on MIKR.US, zaloz konto z referall'a ;) -->
+            Hosted on <a href="https://mikr.us/?r=fd28cce7">MIKR.US</a>
+            <p id="datetime"></p>
+        </footer>
     </div>
 </body>
 </html>
+
